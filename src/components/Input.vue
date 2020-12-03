@@ -11,7 +11,7 @@
         maxlength = "5" input type="number" class="form-control mb-2 mr-sm-2" id="zip" placeholder="Zip Code">
             <div class="btn-toolbar" role="toolbar" aria-label="Grouping buttons">
                 <div class="btn-group mr-2" role="group" aria-label="temp">
-                    <button type="button" class="btn btn-dark" :disabled="isDisabled" @click=fahrenheit()>ºF</button>
+                    <button type="button" class="btn btn-dark" @click=fahrenheit()>ºF</button>
                     <button type="button" class="btn btn-dark" @click=celsius()>ºC</button>
                 </div>
             </div>
