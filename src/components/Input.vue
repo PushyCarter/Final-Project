@@ -62,7 +62,7 @@ export default {
     {
         if (this.zip.length != 5){
             alert('Zip code must contain 5 digits');
-            this.zip = 0;
+            this.zip = '';
         }
         else {
         axios.get('https://api.openweathermap.org/data/2.5/weather?zip=' + this.zip + ',us&units=imperial&appid=dc86f2dcaa61375d94a561a001694478')
@@ -81,7 +81,7 @@ export default {
     {
         if (this.zip.length != 5){
             alert('Zip code must contain 5 digits');
-            this.zip = 0;
+            this.zip = '';
         }
         else {
         axios.get('https://api.openweathermap.org/data/2.5/weather?zip=' +this.zip+ ',us&units=metric&appid=dc86f2dcaa61375d94a561a001694478')
