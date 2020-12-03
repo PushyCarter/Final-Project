@@ -7,7 +7,7 @@
     <div class="container padding">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">{{currentWeather.name}}</h1>
+                <h1 class="display-4">City: {{currentWeather.name}}</h1>
                 <h2>Current Conditions</h2>
                 <p class="lead"><strong>Temperature</strong></p>
                 <p>Current Temp: {{curTemp}}<span v-if="unit===false">°C</span><span v-else>°F</span></p>
