@@ -64,6 +64,10 @@ export default {
         .then( (response) => {
             this.weather = response.data;
             this.temp = response.data.main.temp.toFixed();
+            this.maxTemp = response.data.main.temp_max.toFixed();
+            this.minTemp = response.data.main.temp_min.toFixed();
+            this.sunrise = new Date(response.data.sys.sunrise*1000).toLocaleTimeString("en-US").slice(0,4);
+            this.sunset = new Date(response.data.sys.sunset*1000).toLocaleTimeString("en-US").slice(0,4);
         });
         this.imperial = true;
     }
@@ -79,6 +83,10 @@ export default {
         .then( (response) => {
             this.weather = response.data;
             this.temp = response.data.main.temp.toFixed();
+            this.maxTemp = response.data.main.temp_max.toFixed();
+            this.minTemp = response.data.main.temp_min.toFixed();
+            this.sunrise = new Date(response.data.sys.sunrise*1000).toLocaleTimeString("en-US").slice(0,4);
+            this.sunset = new Date(response.data.sys.sunset*1000).toLocaleTimeString("en-US").slice(0,4);
         })
         this.imperial = false;
         }
