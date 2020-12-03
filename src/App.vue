@@ -1,5 +1,10 @@
+<!--
+  Name: Michael Carter
+  File: App.vue
+  Description: Imported Header and Input to pull that data from the other vue files.
+-->
 <template>
-  <div id="app">
+  <div id="app" style="background-color: #000">
     <Header title="Check The Weather" />
     <Input />
   </div>
@@ -22,6 +27,5 @@ export default {
   *{
     margin: 0px;
     padding: 0px;
-    background: 'src/assets/Test.jpg'
   }
 </style>

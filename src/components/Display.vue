@@ -1,5 +1,10 @@
+<!--
+    Name: Michael Carter
+    File: Display.vue
+    Description: Called the object data to provide the information and provided if statements for the specific unit of measurement.
+-->
 <template>
-    <div class="container">
+    <div class="container padding">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">{{currentWeather.name}}</h1>
@@ -25,3 +30,9 @@ export default {
     props: ['currentWeather', 'curTemp', 'unit', 'highTemp', 'lowTemp', 'rise', 'set']
 }
 </script>
+
+<style scoped>
+.padding{
+    padding: 40px;
+}
+</style>

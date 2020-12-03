@@ -1,3 +1,8 @@
+<!--
+    Name: Michael Carter
+    File: Input.vue
+    Description: Imported Display.vue and Axios. Once mounted, it defaults to find '65721' zip code. Then the functions of Fahrenheit and Celsius change the units of measurements. Zip code cannot receive MORE than 5 numbers, and it will reset if you try to submit less than 5 numbers. Exported variables from Input to Display to provide the appropriate data for the return.
+-->
 <template>
 <div>
     <div class="searchBar">
@@ -29,7 +34,7 @@ export default {
     },
     data() {
         return {
-            zip: 0,
+            zip: '',
             weather: '',
             temp: 0,
             maxTemp: 0,
@@ -101,7 +106,7 @@ export default {
             background: #000;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding-top: 40px;
             margin: 0px;
         }
 </style>
