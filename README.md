@@ -3,10 +3,6 @@
 ## Created Using Vue CLI
 
 ## Author Info
-|``````````````````````|
-| Name: Michael Carter |
-|``````````````````````|
-| Class: CIS-131-W01   |
-|``````````````````````|
-| Assignment: Final    |
-````````````````````````
+- Name: Michael Carter
+- Class: CIS-131-W01(FA20)
+- Assignment: Final Project
